@@ -1,3 +1,4 @@
+```
 |-- 📁 .github
 |-- 📁 node_modules
 |-- 📁 public
@@ -29,3 +30,4 @@
 |-- tsconfig.json
 |-- README.md
 |-- .env
+```
