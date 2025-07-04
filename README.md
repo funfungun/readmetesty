@@ -212,8 +212,8 @@ erDiagram
 
 Properties as follows:
 
-- `name`:
-- `id`:
+- `name`: 카테고리 이름
+- `id`: 카테고리 ID
 
 ## Stock
 
@@ -233,10 +233,10 @@ erDiagram
 
 Properties as follows:
 
-- `id`:
-- `productId`:
-- `sizeId`:
-- `quantity`:
+- `id`: 재고 ID
+- `productId`: 상품 ID
+- `sizeId`: 사이즈 ID
+- `quantity`: 상품 수량
 
 ## Size
 
@@ -255,9 +255,9 @@ erDiagram
 
 Properties as follows:
 
-- `size`: 다국어 지원을 위해 Json 을 사용합니다.
-- `name`:
-- `id`:
+- `size`: 사이즈 json
+- `name`: 사이즈 name
+- `id`: 사이즈 ID
 
 ## Inquiry
 
@@ -282,15 +282,15 @@ erDiagram
 
 Properties as follows:
 
-- `id`:
-- `userId`:
-- `productId`:
-- `title`:
-- `content`:
-- `status`: 문의 처리 상태를 enum 으로 표시합니다.
-- `isSecret`: 비밀글 설정을 할 수 있습니다.
-- `createdAt`:
-- `updatedAt`:
+- `id`: 문의 ID
+- `userId`: 문의 작성자
+- `productId`: 
+- `title`: 문의 제목
+- `content`: 문의 내용
+- `status`: 답변 상태
+- `isSecret`: 비밀 급
+- `createdAt`: 문의 생성 날짜
+- `updatedAt`: 문의 수정 날짜
 
 ## Reply
 
@@ -312,12 +312,12 @@ erDiagram
 
 Properties as follows:
 
-- `id`:
-- `inquiryId`:
-- `userId`:
-- `content`:
-- `createdAt`:
-- `updatedAt`:
+- `id`: 답변 ID
+- `inquiryId`: 답변 내용
+- `userId`: 답변 작성자 (nullable)
+- `content`: 답변 내용
+- `createdAt`: 생성일
+- `updatedAt`: 수정일
 
 ## Review
 
@@ -486,12 +486,12 @@ erDiagram
 
 Properties as follows:
 
-- `id`:
-- `price`:
-- `status`: 결제 상태를 enum 으로 체크합니다.
-- `createdAt`:
-- `updatedAt`:
-- `orderId`:
+- `id`: payment ID
+- `price`: 최종 결제 가격
+- `status`: 결제 상태
+- `createdAt`: 생산 날짜
+- `updatedAt`: 업데이트 날짜 (결제 완료, 결제 취소)
+- `orderId`: 주문 ID
 
 ## Alarm
 
@@ -513,12 +513,12 @@ erDiagram
 
 Properties as follows:
 
-- `id`:
-- `userId`:
-- `content`:
-- `isChecked`: 알림을 읽었는지 boolean 으로 체크합니다.
-- `createdAt`:
-- `updatedAt`:
+- `id`: 알람 ID
+- `userId`: 사용자 ID
+- `content`: 알람 내용
+- `isChecked`: 알람 확인 여부
+- `createdAt`: 생성일시
+- `updatedAt`: 수정일시
 
 ## default
 
