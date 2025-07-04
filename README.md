@@ -56,17 +56,17 @@ erDiagram
 
 Properties as follows:
 
-- `id`:
-- `name`:
-- `email`:
-- `password`:
+- `id`: 유저 KEY ID
+- `name`: 유저 이름
+- `email`: 유저 이메일
+- `password`: 유저 비밀번호 (hash)
 - `refreshToken`:
-- `type`: enum인 UserType 을 통해 BUYER와 SELLER 를 구분합니다.
-- `points`:
-- `createdAt`:
-- `updatedAt`:
-- `gradeId`:
-- `image`:
+- `type`: 유저 타입
+- `points`: 유저 포인트
+- `createdAt`: 유저 생성일
+- `updatedAt`: 유저 정보 업데이트일
+- `gradeId`: 등급 정보 (nullable)
+- `image`: 기본 값 : https://sprint-be-project.s3.ap-northeast-2.amazonaws.com/codiit/1749477485230-user_default.png
 
 ### `SalesLog`
 
