@@ -100,8 +100,8 @@ erDiagram
 
 Properties as follows:
 
-- `name`:
-- `id`:
+- `name`: 등급 이름
+- `id`: 등급 ID
 - `rate`: 할인율
 - `minAmount`: 달성 최소 금액
 
@@ -128,15 +128,15 @@ erDiagram
 
 Properties as follows:
 
-- `id`:
-- `name`:
-- `createdAt`:
-- `updatedAt`:
-- `userId`:
-- `address`:
-- `phoneNumber`:
-- `content`:
-- `image`:
+- `id`: 스토어 ID
+- `name`: 스토어 이름
+- `createdAt`: 스토어 생성일
+- `updatedAt`: 스토어 정보 업데이트일
+- `userId`: 스토어 소유자 유저 ID
+- `address`: 주소
+- `phoneNumber`: 전화번호
+- `content`: 스토어 설명
+- `image`: 가게 이미지 URL
 
 ## FavoriteStore
 
@@ -154,8 +154,8 @@ erDiagram
 
 Properties as follows:
 
-- `storeId`:
-- `userId`:
+- `storeId`: 스토어 ID
+- `userId`: 유저 ID
 
 ## Product
 
@@ -183,18 +183,18 @@ erDiagram
 
 Properties as follows:
 
-- `id`:
-- `name`:
-- `image`:
-- `createdAt`:
-- `updatedAt`:
-- `reviewsRating`:
-- `storeId`:
-- `price`:
-- `discountRate`:
-- `discountStartTime`:
-- `discountEndTime`:
-- `categoryId`:
+- `id`: 상품 ID
+- `name`: 상품 이름
+- `image`: 상품 이미지 URL
+- `createdAt`: 생성일
+- `updatedAt`: 수정일
+- `reviewsRating`: 평균 리뷰 평점
+- `storeId`: 스토어 ID
+- `price`: 정가
+- `discountRate`: 할인율(%)
+- `discountStartTime`: 할인 시작 날짜 (nullable)
+- `discountEndTime`: 할인 종료 날짜 (nullable)
+- `categoryId`: 카테고리 정보
 
 ## Category
 
